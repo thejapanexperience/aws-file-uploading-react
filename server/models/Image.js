@@ -14,6 +14,13 @@ const imageSchema = new mongoose.Schema({
   Key: { type: String, required: true },
 });
 
+// Can auto remove from S3 when deleting from mongo
+imageSchema.pre('remove', (next) => {
+  const Key = this.Key;
+  // s3 remove
+  // call next
+});
+
 imageSchema.statics.upload = function (fileObj) {
   return new Promise((resolve, reject) => {
     // 1. Upload data to S3

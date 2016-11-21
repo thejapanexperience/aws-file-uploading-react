@@ -14,8 +14,13 @@ export default class FileUpload extends Component {
   _onFileSelect(e) {
     e.preventDefault();
     console.log('_onFileSelect');
+    const reader = new FileReader();
     const file = e.target.files[0];
     console.log('file: ', file);
+    reader.onloadend = () => {
+      console.log('reader.result: ', reader.result);
+    };
+    reader.readAsDataURL(file);
   }
 
   _onSubmit(e) {

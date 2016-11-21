@@ -13,6 +13,7 @@
   "author": "Cade Nichols <cade@codinghouse.co>",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.7.5",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-react-html-attrs": "^2.0.0",
@@ -27,7 +28,9 @@
     "file-loader": "^0.9.0",
     "imports-loader": "^0.6.5",
     "jquery": "^3.1.1",
+    "mongoose": "^4.6.8",
     "morgan": "^1.7.0",
+    "multer": "^1.2.0",
     "node-sass": "^3.10.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -40,8 +43,17 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
+    "uuid": "^3.0.0",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-hot-middleware": "^2.13.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
   }
 }
